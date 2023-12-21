@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Notes</title>
+<style>
+h1 { text-align: center; }
+p { font-size: 90%; }
+body { font-family: verdana; }
+</style>
+</head>
+<body>
+
+<h1><span style="font-size:150%;"><a href="https://www.w3schools.com/html/default.asp">HTML Notes from W3Schools</a></span></h1>
+<p style="text-align:center;">While learning HTML through W3Schools, I decided to write my notes in HTML, as a way to practice it.</p>
+<p style="text-align:center;"><b>NOTE:</b> All <u style="color:red;">elements</u> listed such as <u style="color:red;">tags</u> will be red and underlined, while <span style="color:red;">important info</span> or <span style="color:red;">attributes</span> will only be red.</p>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+<h1>Table of Contents</h1>
+<p style="text-align:center; font-size:111%;"><a href="#Paragraph">Paragraphs</a>	
+<span>&emsp;</span>   <a href="#Style">Style</a>
+<span>&emsp;</span>   <a href="#TxtFormat">Formatting</a>
+<span>&emsp;</span>   <a href="#Quote">Quotations</a>
+<span>&emsp;</span>   <a href="#Color">Colors</a>
+<span>&emsp;</span>   <a href="#colSyntax">Color Syntax</a>
+<span>&emsp;</span>   <a href="#CSS">CSS</a>
+<span>&emsp;</span>   <a href="#Link">Links</a>
+<span>&emsp;</span>   <a href="#Bookmark">Bookmarks</a>
+<span>&emsp;</span>   <a href="#Image">Images</a>
+<span>&emsp;</span>   <a href="#ImageMap">Image Maps</a>
+<span>&emsp;</span>   <a href="#Background">Background Images</a>
+<span>&emsp;</span>   <a href="#Picture">The Picture Element</a>
+<span>&emsp;</span>   <a href="#Favicon">Favicon</a>
+<span>&emsp;</span>   <a href="#PageTitle">Page Title</a>
+</p>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+<h1 id="Paragraph"><span style="font-size:85%;"><a href="https://www.w3schools.com/html/html_paragraphs.asp">HTML Paragraphs</a></span></h1>
+<p style="font-size:120%; text-align:center;">The <u style="color:red;">p</u> tag defines a paragraph</p>
+
+<p><b style="font-size:125%;">HTML Horizontal Rules:</b> The <u style="color:red;">hr</u> tag defines a thematic break in the content. It is used to separate content or define a change in an HTML page.</p><!-- The <hr> tag is an empty tag, which means it has no end tag. -->
+
+<p><b style="font-size:125%;">HTML Line Breaks:</b> The <u style="color:red;">br</u> tag inserts a single line break</p>
+<p>Here is an example<br>of a paragraph<br>with line breaks.</p>
+
+<p><b style="font-size:125%;">HTML pre Element:</b> The <u style="color:red;">pre</u> tag defines pre-formatted text</p>
+<pre>
+The text inside a <b>pre</b> element 
+is displayed in a fixed-width font (usually Courier), 
+and it preserves both spaces and line breaks.
+</pre> <!-- You can write multiple lines -->
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+<h1 id="Style"><span style="font-size:85%;"><a href="https://www.w3schools.com/html/html_styles.asp">HTML Styles</a></span></h1>
+<p style="font-size:108%; text-align:center;">The HTML <span style="color:red;">style</span> attribute is used to add styles to an element, such as <span style="color:red;">color</span>, <span style="font-family:courier;">font</span>, <span style="font-size:125%;">size</span>, and more.</p>
+<p style="font-size:108%; text-align:center;"> Setting the style of an HTML element can be done with the <strong>style</strong> attribute.
+<!-- Syntax: <tagname style="property:value;"> -->
+
+<p><b style="font-size:125%;">Background Color:</b> <span style="background-color:lavender;"> This is a paragraph with a lavendar background.</span></p>
+<!-- <body style="background-color:powderblue;"> -- Changes the background color for the entire page to 'powder blue' -->
+
+<p><b style="font-size:125%;">Text Color:</b> <span style="color:blue;">This paragraph is blue.</span><span>&nbsp;</span><span style="color:red;">This paragraph is red.</span></p>
+
+<p><b style="font-size:125%;">Fonts:</b> <span style="font-family:courier;">This paragraph is written in courier.</span><span>&nbsp;</span><span style="font-family:times;">This paragraph is written in times.</span></p>
+
+<p><b style="font-size:125%;">Text Size:</b> <span style="font-size:75%;">This paragraph is 75% of the normal size.</span><span>&nbsp;</span><span style="font-size:125%;">This paragraph is 125% of the normal size.</span></p>
+
+<p><b style="font-size:125%;">Text Alignment:</b></p>
+<p style="text-align:center;">This paragraph is aligned in the center.</p>
+<p style="text-align:right;">This paragraph is aligned to the right.</p>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+<h1 id="TxtFormat"><a href="https://www.w3schools.com/html/html_formatting.asp">HTML Text Formatting</a></h1>
+<p style="font-size:108%; text-align:center;">The following <u style="color:red;">tags</u> each define how a text is perceived.</p>
+
+<pre style="text-align:center; font-size:111%;">
+<u style="color:red;">span</u> is used when styling a specific portion of a line.
+<u style="color:red;">b</u> = <b>bold text</b>	 		<u style="color:red;">strong</u> = <strong>important text</strong>
+<u style="color:red;">i</u> = <i>italicised text</i>			<u style="color:red;">em</u> = <em>emphasized text</em>
+<u style="color:red;">u</u> = <u>underlined text</u>			<u style="color:red;">ins</u> = <ins>inserted text</ins>
+<u style="color:red;">s</u> = <s>strikethrough text</s>			<u style="color:red;">del</u> = <del>deleted text</del>
+<u style="color:red;">sub</u> = <sub>subscripted text</sub>			<u style="color:red;">sup</u> = <sup>superscripted text</sup>
+     <u style="color:red;">small</u> = <small>smaller text</small>		    <u style="color:red;">mark</u> = <mark>marked/highlighted text</mark>
+</pre>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+<h1 id="Quote"><a href="https://www.w3schools.com/html/html_quotation_elements.asp">HTML Quotation & Citation Elements</a></h1>
+<p style="font-size:108%; text-align:center;">Important elements: <u style="color:red;">blockquote</u>, <u style="color:red;">q</u>, <u style="color:red;">abbr</u>, <u style="color:red;">address</u>, <u style="color:red;">cite</u>, and <u style="color:red;">bdo</u></p>
+
+<p><b style="font-size:125%;">HTML Line Breaks:</b> The <u style="color:red;">br</u> tag inserts a single line break</p>
+
+<p><b style="font-size:125%;">Blockquote:</b> The HTML <u style="color:red;"><b>blockquote</b></u> element defines a section that is quoted from another source.</p>
+<blockquote cite="http://https://www.w3schools.com/html/html_quotation_elements.asp">
+Browsers usually indent blockquote elements.
+</blockquote>
+
+<p><b style="font-size:125%;">Q:</b> The HTML <u style="color:red;"><b>q</b></u> tag defines a short quotation.</p>
+<p>NOTE: <q>Browsers usually insert quotation marks around the q element.</q></p>
+
+<p><b style="font-size:125%;">ABBR:</b> The HTML <u style="color:red;"><b>abbr</b></u> tag defines an abbreviation or acronym, like <abbr title="Hyper Text Markup Language">"HTML"</abbr>, <abbr title="Cascading Style Sheets">"CSS"</abbr>, <abbr title="Mister">"Mr."</abbr>, <abbr title="Doctor">"Dr."</abbr>, <abbr title="As Soon As Possible">"ASAP"</abbr>.</p>
+
+
+<p><b style="font-size:125%;">ADDRESS:</b> The HTML <u style="color:red;"><b>address</b></u> element defines <b>contact information</b> (author/owner) of a document or article. The text in the <u style="color:red;"><b>address</b></u> element usually renders in italic, & browsers will always add a line break before & after the element.</p>
+<address>
+The contact information can be:<br> 
+Email Address, URL, Physical Address, Phone Number, <br>
+Phone Number, Social Media Handle, etc...
+</address><br>
+
+<p><b style="font-size:125%;">CITE:</b> The HTML <u style="color:red;"><b>cite</b></u> element defines the <ins>title of a work</ins>. Browsers usually display cite elements in italic.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/The_Scream.jpg" width="220" height="277" alt="The Scream">
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+<p><b style="font-size:125%;">BDO:</b> The HTML <u style="color:red;"><b>bdo</b></u> tag is used to override the current text direction. If your browser supports bi-directional override (<ins>bdo</ins>), the next line will be written from right to left (rtl):</p>
+<bdo dir="rtl"><span title="This line will be written from right to left">This line will be written from right to left</span></bdo>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+<h1 id="Color"><a href="https://www.w3schools.com/html/html_colors.asp">HTML Colors</a></h1>
+<p style="font-size:115%; text-align:center;">HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.</p>
+
+<p style="background-color:lavender;"><b style="font-size:125%;">Background Color:</b> This is a paragraph.</p>
+<p><b style="font-size:125%;">Text Color:</b> <span style="color:blue;">This paragraph is blue.</span><span>&nbsp;</span><span style="color:MediumSeaGreen;">This paragraph is a specific green.</span></p>
+
+<p><b style="font-size:125%;">Border Color: </b> <span style="border:2px solid Violet;">This paragraph has a violet border.</span><span>&emsp;</span><span style="border:2px solid Tomato;">This paragraph has a red border.</span></p>
+
+<p><b style="font-size:125%;">Color Values:</b> The following 3 <b>div</b> elements have their background color set with RGB, HEX, & HSL values:</p>
+<p><span style="background-color:rgb(255, 99, 71);">RGB(255,99,71)</span> <span>&nbsp;</span> <span style="background-color:#ff6347;">#ff6347</span> <span>&nbsp;</span> <span style="background-color:hsl(9, 100%, 64%);">HSL(9, 100%, 64%)</span></p>
+
+<p>The following 2 <b>div</b> elements have their background color set with RGBA & HSLA values, which add an Alpha channel to the color (Same as color name "Tomato", but 50% transparent):</p>
+<p><span style="background-color:rgba(255, 99, 71, 0.5);">RGBA(255, 99, 71, 0.5)</span> <span>&nbsp;</span> <span style="background-color:hsla(9, 100%, 64%, 0.5);">HSLA(9, 100%, 64%, 0.5)</span></p>
+
+<p>In addition to the predefined color names, colors can be specified using RGB, HEX, HSL, or even transparent colors using RGBA or HSLA color values.</p>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+<h1 id="colSyntax" style="text-align:center; font-size:200%;">HTML Color Syntax</h1>
+
+<h2><a href="https://www.w3schools.com/html/html_colors_rgb.asp">RGB Color Syntax</a></h2>
+<p>An RGB color value represents <span style="color:red;">RED</span>, <span style="color:green;">GREEN</span>, & <span style="color:blue;">BLUE</span> light sources. ~<i>RGB(red, green, blue)</i></p>
+<p>Each parameter defines the intesity of the color with a value between 0 & 255...</p>
+<p><i style="color:rgb(255,0,0);">RED = RGB(255,0,0)</i>;  <i style="color:rgb(0,255,0);">GREEN = GREEN = RGB(0,255,0)</i>;  <i style="color:rgb(0,0,255);">BLUE = RGB(0,0,255)</i>;</p>
+<p><b style="font-size:105%;">EXAMPLES:</b> <span style="background-color:rgb(0,0,0);"><i style="color:white;">BLACK = RGB(0,0,0)</i></span> <span>&nbsp;</span> <span style="background-color:rgb(255,255,255);">WHITE = RGB(255,255,255)</span> <span>&nbsp;</span> <span style="background-color:rgb(238,130,238);">Pink = RGB(238,130,238)</span> <span>&nbsp;</span> <span style="background-color:rgb(255,165,0);">Orange = RGB(255,165,0)</span> <span>&nbsp;</span> <span style="background-color:rgb(106,90,205);">Purple = RGB(106,90,205)</span></p>
+<!-- Text changed to white (in black example) so it will be shown against black background -->
+
+<hr>
+
+<h2><a href="https://www.w3schools.com/html/html_colors_hex.asp">HEX Color Syntax</a></h2>
+<pre style="font-size:110%;">
+A hexidecimal color is specified with: #RRGGBB; where the hexadecimal integers specify the components of the color.
+- RR, GG, & BB are hexadecimal values between 00 & ff (same as decimal 0-255)
+- <i style="color:#ff0000;">RED = #ff0000</i>;  <i style="color:#00ff00;">GREEN = #00ff00</i>;  <i style="color:#0000ff;">BLUE = #0000ff</i>;
+</pre>
+<p><b style="font-size:105%;">EXAMPLES:</b> <span style="background-color:#000000;"><i style="color:white;">BLACK = #000000</i></span> <!-- Text changed to white so it will be shown against black background --> <span>&nbsp;</span> <span style="background-color:#ffffff;">WHITE = #ffffff</span> <span>&nbsp;</span> <span style="background-color:#ee82ee;">Pink = #ee82ee</span> <span>&nbsp;</span> <span style="background-color:#ffa500;">Orange = #ffa500</span> <span>&nbsp;</span> <span style="background-color:#6a5acd;">Purple = #6a5acd</span></p>
+
+<hr>
+
+<h2><a href="https://www.w3schools.com/html/html_colors_hsl.asp">HSL Color Syntax</a></h2>
+<pre style="font-size:110%;">
+<i style="font-size:150%;">HSL(hue, saturation, lightness)</i>
+  <ins><b>Hue</b></ins> is a degree on the color wheel from 0 to 360. (R=0, G=120, B=240).
+  <ins><b>Saturation</b></ins> is a % value. <ins>0% = a shade of gray</ins> & <ins>100% = full color</ins>.
+  <ins><b>Lightness</b></ins> is a % value. <ins>0% = black</ins> & <ins>100% = white</ins>.
+  <i style="color:hsl(0, 100%, 50%);">RED = HSL(0, 100%, 50%)</i>;  <i style="color:hsl(120, 100%, 50%);">GREEN = HSL(120, 100%, 50%)</i>;  <i style="color:hsl(240, 100%, 50%);">BLUE = HSL(240, 100%, 50%)</i>;
+</pre>
+<p><b style="font-size:105%;">EXAMPLES:</b>  <span style="background-color:hsl(0, 100%, 0%);"><i style="color:white;">BLACK = HSL(?, 100%, 0%)</i></span> <span>&nbsp;</span> <span style="background-color:hsl(0, 100%, 100%);">WHITE = HSL(?, 100%, 100%)</span> <span>&nbsp;</span> <span style="background-color:hsl(300, 76%, 72%);">PINK = HSL(300, 76%, 72%)</span> <span>&nbsp;</span> <span style="background-color:hsl(39, 100%, 50%);">ORANGE = HSL(39, 100%, 50%)</span> <span>&nbsp;</span> <span style="background-color:hsl(248, 53%, 58%);">PURPLE = HSL(248, 53%, 58%)</span></p>
+<!-- Text changed to white so it will be shown against black background -->
+<br>
+
+
+<pre style="font-size:110%;">
+<b style="font-size:175%;"><u>Saturation:</u></b> Saturation can be described as the intensity of a color.
+  100% is pure color, no shades of gray.
+  50% is half color.
+  0% is completely gray, you can no longer see the color.
+</pre>
+<p><span style="font-size:125%;">EXAMPLES:</span> <span style="background-color:hsl(0, 100%, 50%);">HSL(0, 100%, 50%) -- Pure Color</span> <span>&nbsp;</span> <span style="background-color:hsl(0, 50%, 50%);">HSL(0, 50%, 50%) -- Half Color</span> <span>&nbsp;</span> <span style="background-color:hsl(0, 0%, 50%);">HSL(0, 0%, 50%) -- No Color</span></p>
+<br>
+
+<pre style="font-size:110%;">
+<b style="font-size:175%;"><u>Lightness:</u></b> The lightness of a color can be described as how much light you want to give the color.
+  0% - no light -- black
+  50% - half light -- color
+  100% - full light -- white
+</pre>
+<p><span style="font-size:125%;">EXAMPLES:</span> <span style="background-color:hsl(0, 100%, 0%);">HSL(0, 100%, 0%)</span> <span>&nbsp;</span> <span style="background-color:hsl(0, 100%, 25%);">HSL(0, 100%, 25%)</span> <span>&nbsp;</span> <span style="background-color:hsl(0, 100%, 50%);">HSL(0, 100%, 50%)</span> <span>&nbsp;</span> <span style="background-color:hsl(0, 100%, 75%);">HSL(0, 100%, 75%)</span> <span>&nbsp;</span> <span style="background-color:hsl(0, 100%, 90%);">HSL(0, 100%, 90%)</span> <span>&nbsp;</span> <span style="background-color:hsl(0, 100%, 100%);">HSL(0, 100%, 100%)</span></p>
+<br>
+
+<p><b style="font-size:145%;"><u>RGBA & HLSA Color Syntax:</u></b> These color values add an <ins><b>Alpha</b></ins> channel, which specifies the opacity for a color. <i style="font-size:90%;">xxxA(x, x, x, alpha)</i></p>
+<p>The alpha parameter is a number between 0.0 & 1.0: &emsp; <b>0.0</b> = transparent (no color) &emsp; <b>1.0</b> = opaque (full color)</p>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+<h1 id="CSS"><a href="https://www.w3schools.com/html/html_css.asp">HTML CSS</a></h1>
+
+<p style="text-align:center;"><span title="Cascading Style Sheets">CSS</span> is used to format the layout of a webpage. With CSS, you can control the color, font, size of text, spacing between elements, 
+how elements are positioned and laid out, what background images or background colors are to be used, 
+different displays for different devices and screen sizes, and much more!</p>
+<!-- The word <b>cascading</b> means that a style applied to a parent element will also apply 
+to all children elements within the parent. So, setting the color of the body text to "blue", 
+all headings, paragraphs, and other text elements within the body with all get the same color (unless specified otherwise)-->
+
+<pre style="font-size:120%;">
+CSS can be added to HTML documents in 3 ways:
+<b>- Inline</b> - by using the <i style="color:#ff6060;">style</i> attribute inside HTML elements.
+<b>- Internal</b> - by using a <u style="color:#ff6060;">style</u> element in the <u style="color:#ff6060;">head</u> section.
+<b>- External</b> - by using a <u style="color:#ff6060;">link</u> element to link to an external CSS file.
+<!--The most common way to add CSS is to keep the styles in external CSS files -->
+</pre>
+
+<hr>
+<p><b style="font-size:140%;">Inline CSS:</b> uses the <i style="color:#ff6060;">style</i> attribute of an HTML element to apply a unique style to a single HTML element.</p>
+<p><b style="font-size:110%;">Examples:</b> <span style="color:blue;">A blue paragraph</span> <span>&nbsp;</span> <span style="color:red;">A red paragraph.</span></p>
+<br>
+
+<p><b style="font-size:140%;">Internal CSS:</b> used to define a style for a single HTML page.</p>
+<p>An internal CSS is defined in the <u style="color:#ff6060;">head</u> section of an HTML page, within a <u style="color:#ff6060;">style</u> elemenet.</p>
+<br>
+
+<p><b style="font-size:140%;">External CSS:</b> An external style sheet is used to define the style for many HTML pages.</p>
+<p>To use an external style sheet, add a link to it in the <u style="color:#ff6060;">head</u> section of an HTML page.</p> <!-- Example provided in HTML CSS Examples folder -->
+<p><b>Link to External CSS:</b> External style sheets can be referenced with a full URL or with a path relative to the current web page.</p>
+<br>
+
+<hr>
+<p><b style="font-size:140%;">CSS Colors, Fonts and Sizes</b></p>
+<pre>
+  The CSS <i style="color:#ff6060;">color</i> property defines the text color to be used.
+  The CSS <i style="color:#ff6060;">font-family</i> property defines the font to be used.
+  The CSS <i style="color:#ff6060;">font-size</i> property defines the text size to be used.
+</pre>
+
+<p><b style="font-size:140%;">CSS Border, Padding, & Margin</b></p> <!-- Examples provided in HTML CSS Examples folder -->
+<pre>
+The CSS <i style="color:#ff6060;">border</i> property defines a border around an HTML element.
+The CSS <i style="color:#ff6060;">padding</i> property defines a padding (space) between the text and the border.
+The CSS <i style="color:#ff6060;">margin</i> property defines a margin (space) outside the border.
+</pre>
+
+<hr>
+<p><b style="text-size:200%;">Important Notes about CSS</b></p>
+<pre style="font-size:110%;">
+Use the HTML <u style="color:red;">link</u> element to refer to an external CSS file
+Use the HTML <u style="color:red;">head</u> element to store <u style="color:red;">style</u> and <u style="color:red;">link</u> elements
+Use the CSS <span style="color:red;">border</span> property for borders
+Use the CSS <span style="color:red;">padding</span> property for space inside the border
+Use the CSS <span style="color:red;">margin</span> property for space outside the border
+</pre>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+<h1 id="Link"><a href="https://www.w3schools.com/html/html_links.asp">HTML Links</a></h1>
+
+<pre style="text-size:125%;">
+- HTML Links are hyperlinks. Moving the mouse over a link will turn the mouse arrow into a small hand.
+- The HTML <u style="color:red;">a</u> tag defines a hyperlink.
+- It has the following syntax:	<b style="color:purple;">&lta href="url"&gtlink text&lt/a&gt</b>
+- The most important attribute of the <u style="color:red;"><b>a</b></u> element is the <span style="color:red;">href</span> attribute, which indicates the link's destination. <!-- The link text is the part that will be visible to the reader.-->
+</pre>
+<p style="font-size:85%;"><b>Example</b>: <a href="https://www.w3schools.com/">Visit W3Schools.com!</a></p>
+<pre>
+By default, links will appear as follows in all browsers:
+  <span style="color:blue;"><u title="Underlined and Blue">Unvisited Link</u></span>    <span style="color:purple;"><u title="Underlined and Purple">Visited Link</u></span>    <span style="color:red;"><u title="Underlined and Red">Active Link</u></span>
+</pre>
+<br>
+
+<h3>The <ins>Target</ins> Attribute</h3>
+<p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+<p>The <b style="color:#ff6060;">target</b> attribute specifies where to open the linked document.</p>
+<pre>
+The <b style="color:#ff6060;">target</b> attribute can have one of the following values:
+- Each value opens the document in a different location.
+  <span style="color:#ff6060;">_self</span> - in the same window/tab as it was clicked. (default)
+  <span style="color:#ff6060;">_blank</span> - in a new window or tab.
+  <span style="color:#ff6060;">_parent</span> - in the parent frame.
+  <span style="color:#ff6060;">_top</span> - in the full body of the window.
+</pre>
+<p style="font-size:85%;"><b>Example using target="_blank":</b> <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a></p>
+
+<hr>
+<h3>Absolute URLs vs Relative URLs</h3>
+<p>An <b>absolute URL</b> uses a full web address in the <span style="color:#ff6060;">href</span> attribute.</p>
+<p>A local link (a link to a page within the same website) is specified with a <b>relative URL</b> (without the "https://www" part).</p>
+
+<p style="font-size:85%;"><b>Absolute URL Example</b>: <a href="https://www.w3.org/">W3C</a> or <a href="https://www.google.com/">Google</a></p>
+<p style="font-size:85%;"><b>Relative URL Example</b>: <a href="html_images.asp">HTML Images</a> or <a href="/css/default.asp">CSS Tutorial</a></p>
+
+<hr>
+<h3>Use an Image as a Link</h3>
+<p> To use an image as a link, just put the <u style="color:#ff6060;"><b>img</b></u> tag inside the <u style="color:#ff6060;"><b>a</u></b> tag.
+<p><b>Example</b>:</p>
+<a href="default.asp"><img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+
+<hr>
+<h3>Link to an Email Address</h3>
+<p>Use <b style="color:#ff6060;">mailto:</b> inside the <span style="color:#ff6060;">href</span> attribute to create a link that opens the user's email program (to let them send a new email)</p>
+<p><b>Example</b>: <a href="mailto:someone@example.com">Send email</a></p>
+
+<hr>
+<h3>Use a Button as a Link</h3>
+<p>To use an HTML button as a link, you have to add some JavaScript code.</p>
+<p>JavaScript allows you to specify what happens at certain events, such as a click of a button.</p>
+<p><b>Example</b>: <button onclick="document.location='default.asp'">HTML Tutorial</button></p>
+
+<hr>
+<h3>Link Titles</h3>
+<p>The <b style="color:#ff6060;">title</b> attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+<p><b>Example</b>: <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a></p>
+
+<hr>
+<h1 id="Bookmark"><a href="https://www.w3schools.com/html/html_links_bookmarks.asp">HTML Links - Bookmarks</a></h1>
+<p>HTML Links can be used to create bookmarks, so that readers can jump to specific parts of a web page.</p>
+
+<h3>Creating a Bookmark in HTML</h3>
+<p>To create a bookmark, first create the bookmark, then add a link to it.</p>
+<p>When the link is clicked, the page will scroll down or up to the location with the bookmark.</p>
+<pre>
+<b style="font-size:110%;">Example:</b>
+First, use the <b style="color:#ff6060;">id</b> attribute to create a bookmark.
+ --> (h2 id="C4")Chapter 4(/h2)
+Then, add a link to the bookmark ("Jump to Chapter 4"), 
+from within the same page:
+ --> (a href="#C4")Jump to Chapter 4(/a)
+</pre>
+<pre>
+<b style="font-size:110%;">Note:</b> You can also add a link to a bookmark on another page
+ --> (a href="html_demo.html#C4")Jump to Chapter 4(/a)
+</pre>
+
+<hr>
+<h3>Bookmarks Summary</h3>
+<p>Use the <b style="color:#ff6060;">id</b> attribute (id="value") to define bookmarks in a page.</p>
+<p>Use the <b style="color:#ff6060;">href</b> attribute (href="#value") to link to the bookmark.</p>
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+
+<hr><!-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------><hr>
+
+
+<h1 style="font-size:150%;">END</h1>
+</body>
+</html>
